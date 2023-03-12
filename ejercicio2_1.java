@@ -51,19 +51,24 @@ public class ejercicio2_1 {
                 ++m;
                     break;
                 case 0:
+                
                 //se imprime el contador h y m de las personas registradas
                 System.out.println("La cantidad de hombres que se registraron fue de: "+h);
                 System.out.println("La cantidad de mujeres que se registraron fue de: "+m);
                 promedio=0;
                 //se calcula el promedio de edad en ambos generos
+                if(h!=0){
                 for ( i = 0; i < h; i++) {
 
                     promedio+=edadH[i];
                 }
+                
                 /*para imprimir se divide el promedio que es la suma de todas las edades contra la
                  cantidad de personas registradas
                 */
                 System.out.println("El promedio de edad de los hombres fue: "+(promedio/h));
+            }else{}
+            if(m!=0){
                 promedio=0;
                 for ( j = 0; j < m; j++) {
                     promedio+=edadM[j];
@@ -75,6 +80,7 @@ public class ejercicio2_1 {
                 se utiliza la variable n para cuando halle una edad menor a n se le asigna el indice para
                 llamar al nombre de la persona.
                 */
+
                 menor=edadM[0];
                 n=0;
                 for (i=1; i<m;i++) {
@@ -84,6 +90,8 @@ public class ejercicio2_1 {
                     }
                 }
                 System.out.println(nombreM[n]+" Es la mujer mas joven con: "+menor+" años.");
+            }else{}
+            if(h!=0){
                 menor=edadH[0];
                 n=0;
                 for (i=1; i<h;i++) {
@@ -93,7 +101,8 @@ public class ejercicio2_1 {
                     }
                 }
                 System.out.println(nombreH[n]+" Es el hombre mas joven con: "+menor+" años.");
-
+            }else{}
+            if(m!=0){
                 mayor=edadM[0];
                 n=0;
                 for (i=1; i<m;i++) {
@@ -103,6 +112,8 @@ public class ejercicio2_1 {
                     }
                 }
                 System.out.println(nombreM[n]+" Es la mujer mas adulta con: "+mayor+" años.");
+            }else{}
+            if(h!=0){
                 mayor=edadH[0];
                 n=0;
                 for (i=1; i<h;i++) {
@@ -112,6 +123,7 @@ public class ejercicio2_1 {
                     }
                 }
                 System.out.println(nombreH[n]+" Es el hombre mas adulto con: "+mayor+" años.");
+            }else{}
                 //y termina el programa al salir.
                     System.out.println("Hasta luego.");
                     break;
