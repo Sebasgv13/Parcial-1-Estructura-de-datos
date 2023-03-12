@@ -13,13 +13,13 @@ public class ejercicio3_1 {
         for (int i = 0; i < 5; i++) {
             System.out.print("ingrese un numero: ");
             vector1[i]= sc.nextInt();
-            System.out.println();
+            
         }
         System.out.println("Numeros para el vector 2.");
         for (int i = 0; i < 5; i++) {
             System.out.print("ingrese un numero: ");
             vector2[i]= sc.nextInt();
-            System.out.println();
+            
         }
         System.out.println("El vector 3 tiene los siguientes numeros: ");
         for (int i = 0; i < 5; i++) {
